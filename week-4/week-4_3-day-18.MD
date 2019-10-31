@@ -121,9 +121,10 @@ reverseFib(6) // [ 1, 1, 2, 3, 5, 8 ]
 ### Advance:
 
 ```
-//DEFAULT DO NOT USE THIS SOLUTION!
-//Solution#1: Using .reverse()
+//DEFAULT DO NOT USE THIS SOLUTION BELOW!
+//Using .reverse()
 
+/////////////////////////////////////////////////////////////////////////////////
 function selReverse(arr, int){
   let newA=[]
   int > arr.length ? arr.reverse() : int === 0 ? arr : arr.map((x, i, a)=>{
@@ -133,4 +134,48 @@ function selReverse(arr, int){
 }
 
 selReverse([1,2,3,4,5,6], 2)
+/////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////
+function reverse(arr, int){
+  var splits=[]
+  for(var i=0; i<arr.length; i+=int){
+    splits.push(arr.slice(i, i+int).reverse())
+  }
+  return splits.join().split(',')
+}
+
+function selReverse(arr, int){
+  let newArr=[],
+      subArr=[]
+  if(arr===null || int > arr.length){
+    return arr
+  }
+  arr.map((x, i)=>{if(i%int===0 && i!==0){
+    newArr=newArr.concat(subArr.reverse())
+    subArr=[]
+  }
+    subArr.push(x)
+  })
+  newArr=newArr.concat(subArr.reverse())
+  return newArr
+}
+
+function selReverse(arr, int){
+  if(int > arr.length){
+    return arr.reverse()
+  }else{
+    for(let i=0; i<arr.length; i+=int ){
+      let replacer=arr.splice(i, int).reverse()
+      arr.splice(i, 0, ...replacer)
+    }
+    return arr
+  }
+}
+
+selReverse([1,2,3,4,5,6], 2)
+
+///////////////////////////////////////////////////////////////////
+
 ```
