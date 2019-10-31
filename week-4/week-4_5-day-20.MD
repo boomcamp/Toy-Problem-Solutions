@@ -71,3 +71,47 @@ Fold:  42 , Distance:  439804651.1104
 
 ```
 
+**Advance**:
+
+```
+//Solution#1: for loop
+
+let index;
+const count = 2;
+
+function dirReduce(cardinalDirection){
+ for (index = 0; index < cardinalDirection.length; index++){
+   if (cardinalDirection[index] === 'NORTH' && cardinalDirection[index+1] === 'SOUTH'){
+     
+     //Remove match 'NORTH' and 'SOUTH' from array index
+    console.log(cardinalDirection.splice(index,count), cardinalDirection);
+    index -= count;// Loop next iteration minus 2 count
+
+   }
+   if (cardinalDirection[index] === 'SOUTH' && cardinalDirection[index+1] === 'NORTH'){
+     console.log(cardinalDirection.splice(index,count), cardinalDirection);
+    index -= count;
+   }
+   if (cardinalDirection[index] === 'WEST' && cardinalDirection[index+1] === 'EAST'){
+      console.log(cardinalDirection.splice(index,count), cardinalDirection);
+    index -= count;
+   }
+   if (cardinalDirection[index] === 'EAST' && cardinalDirection[index+1] === 'WEST'){
+     console.log(cardinalDirection.splice(index,count), cardinalDirection);
+    index -= count;
+   }
+ }
+ return cardinalDirection;
+} 
+
+dirReduce(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']);
+
+//MOVE: let i = minus 2 count
+
+//[ ['NORTH', 'SOUTH'], 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']   = [ 'NORTH', 'SOUTH' ] 
+//[ 'SOUTH', ['EAST', 'WEST'], 'NORTH', 'WEST']                     = [ 'EAST', 'WEST' ]
+//[ ['SOUTH', 'NORTH'], 'WEST']                                     = [ 'SOUTH', 'NORTH' ]
+
+//[ 'WEST' ]                                                        = [ 'WEST' ] 
+```
+
