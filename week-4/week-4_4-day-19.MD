@@ -38,7 +38,7 @@ humanReadable(359999);
 **Advance** :
 
 ```
-//Solution#1: Using switch, case
+//Solution#1: Using switch case, typeof, isNaN
 
 //Declare variables
 let numbers=[];
