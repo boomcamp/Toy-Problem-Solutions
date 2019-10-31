@@ -73,10 +73,11 @@ squareEach(4232)
 **Instruction** : We will not limit to 31 character solution.
 
 ```
-//DEFAULT Solution#1: number + next count
+//DEFAULT DO NOT USE THIS SOLUTION!
+//Solution#1: number + next count
 
 function countdown(n){
-//This is a 30 character solution
+//This is a 31 character solution
 return((n+2) + "!" +(n+1) + "!" + (n))
 }
 
@@ -166,7 +167,7 @@ countdown.prototype.addPunctuation = function(n){
 
 
 //Output
-cDown.addPunctuation(100).result;
+cDown.addPunctuation(1).result;
 //cDown.addPunctuation(10).result;
 //cDown.addPunctuation(100).result
 
