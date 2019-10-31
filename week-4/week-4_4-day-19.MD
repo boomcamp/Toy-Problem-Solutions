@@ -38,5 +38,25 @@ humanReadable(359999);
 **Advance** :
 
 ```
-//TODO
+//DEFAULT
+//Solution#1: Using isNaN, slice
+function concat(str){
+  var nums=[];
+  var words=[];
+  var end=0;
+  
+  for(var i=0;i<str.length;i++){
+    if(isNaN(str[i])===true){
+      words.push(str.slice(0,i+1));
+      nums.push(0);
+    }else if(isNaN(str[i])===false){
+      nums.push(str[i]);
+    }
+  }
+  //parseInt removes the preceding 0's. Try to find another method.
+  end= parseInt(nums.join(''))+1
+  return words[words.length-1] + end;
+}
+
+concat('Taco');
 ```
