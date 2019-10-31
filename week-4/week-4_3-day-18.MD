@@ -121,5 +121,15 @@ reverseFib(6) // [ 1, 1, 2, 3, 5, 8 ]
 ### Advance:
 
 ```
-//TODO:
+//Solution#1: Using .reverse()
+
+function selReverse(arr, int){
+  let newA=[]
+  int > arr.length ? arr.reverse() : int === 0 ? arr : arr.map((x, i, a)=>{
+    newA.push(...(a.splice(0, int).reverse()))
+  })
+   return newA.concat(arr.reverse())
+}
+
+selReverse([1,2,3,4,5,6], 2)
 ```
