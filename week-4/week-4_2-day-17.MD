@@ -1,7 +1,7 @@
 `https://frontend.boom.camp/week-4/2-day-17/1-toy-problem`
 
 
-Basic:
+### Basic:
 
 ```
 
@@ -68,8 +68,9 @@ squareEach(4232)
 ```
 
 
-Advance:
+### Advance:
 
+**Instruction** : We will not limit to 31 character solution.
 
 ```
 //DEFAULT Solution#1: number + next count
