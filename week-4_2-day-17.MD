@@ -1,7 +1,7 @@
 `https://frontend.boom.camp/week-4/2-day-17/1-toy-problem`
 
 
-Basic:
+### Basic:
 
 ```
 
@@ -68,7 +68,7 @@ squareEach(4232)
 ```
 
 
-Advance:
+### Advance:
 
 
 ```
