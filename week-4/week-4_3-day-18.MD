@@ -121,6 +121,7 @@ reverseFib(6) // [ 1, 1, 2, 3, 5, 8 ]
 ### Advance:
 
 ```
+//DEFAULT DO NOT USE THIS SOLUTION!
 //Solution#1: Using .reverse()
 
 function selReverse(arr, int){
