@@ -2,12 +2,10 @@
 
 **Instruction**: No reverse built in functions are allowed, e.g `[1, 1, 2, 3, 5].reverse()`
 
-**Tip**: Use sorting algorithm (e.g: Bubble sort), or manual sorting
+**Tip**: Use sorting algorithm (e.g: [Bubble sort](https://khan4019.github.io/front-end-Interview-Questions/sort.html) ), or manual sorting
 
 
-Solutions:
-
-Basic:
+### Basic:
 
 ```
 //Solution#1: .reverse()
