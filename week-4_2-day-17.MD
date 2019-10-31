@@ -72,10 +72,10 @@ squareEach(4232)
 
 
 ```
-//DEFAULT Solution#1: number + next count
+//DEFAULT Solution#1: N = Number (Number + next count) , (Number + next count) , (Actual number)
 
 function countdown(n){
-//This is a 30 character solution
+//This is a 31 character solution
 return((n+2) + "!" +(n+1) + "!" + (n))
 }
 
