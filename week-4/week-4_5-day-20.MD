@@ -86,7 +86,9 @@ function dirReduce(cardinalDirection){
      //Remove match 'NORTH' and 'SOUTH' from array index
     console.log(cardinalDirection.splice(index,count), cardinalDirection);
     index -= count;// Loop next iteration minus 2 count
-
+    
+    
+    //The same process for the rest..
    }
    if (cardinalDirection[index] === 'SOUTH' && cardinalDirection[index+1] === 'NORTH'){
      console.log(cardinalDirection.splice(index,count), cardinalDirection);
