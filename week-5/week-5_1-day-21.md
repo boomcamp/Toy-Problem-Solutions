@@ -1,9 +1,6 @@
 
 `https://frontend.boom.camp/week-5/1-day-21/1-toy-problem`
 
-
-**BASIC**:
-
 ```
 //Constant string literals
 const alpha = {
