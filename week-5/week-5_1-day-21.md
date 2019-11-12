@@ -38,10 +38,3 @@ function toLeet(str) {
 ```
 toLeet('leet') //=> '1337'
 ```
-
-
-**ADVANCE**:
-
-```
-//TODO: 
-```
